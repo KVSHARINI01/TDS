@@ -1,3 +1,5 @@
+import streamlit as st
+st.title('Largest of 3 Numbers')
 def maximum(a, b, c): 
     if (a >= b) and (a >= c): 
         return a 
@@ -6,7 +8,7 @@ def maximum(a, b, c):
     else: 
         return c         
 # Driven code 
-a = int(input("First number: "))
-b = int(input("Second number: "))
-c = int(input("Third number: "))
-print(maximum(a, b, c))
+a = st.number_input("First number: ")
+b = st.number_input("Second number: ")
+c = st.number_input("Third number: ")
+st.write(maximum(a, b, c))
