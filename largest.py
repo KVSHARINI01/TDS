@@ -1,14 +1,12 @@
 def maximum(a, b, c): 
     if (a >= b) and (a >= c): 
-        largest = a 
+        return a 
     elif (b >= a) and (b >= c): 
-        largest = b 
+        return b 
     else: 
-        largest = c 
-         
-    return largest 
+        return c         
 # Driven code 
-a = int(input("First number"))
-b = int(input("Second number"))
-c = int(input("Third number"))
+a = int(input("First number: "))
+b = int(input("Second number: "))
+c = int(input("Third number: "))
 print(maximum(a, b, c))
